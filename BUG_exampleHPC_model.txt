@@ -1,0 +1,14 @@
+# this is to go with BUG_exampleHPC.R 
+
+
+model{
+    for (j in 1:N) {
+        Y[j] ~ dnorm(mu[j], tau)  ## Response values Y are Normally distributed
+        mu[j] <- alpha + beta * (x[j] - xbar)  ## linear model with x values centred
+    }
+    ## Priors
+    alpha ~ dnorm(0, 0.001)
+    beta ~ dnorm(0, 0.001)
+    tau ~ dgamma(0.001, 0.001)
+    sigma <- 1/sqrt(tau)
+}
