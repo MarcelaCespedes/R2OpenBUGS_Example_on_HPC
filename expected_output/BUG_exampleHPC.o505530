@@ -24,7 +24,7 @@ Type 'q()' to quit R.
 > # code (to run simple BUG example) taken from
 > # http://rstudio-pubs-static.s3.amazonaws.com/1935_652d6fb17d7941c4b91bbbc5a22d4494.html
 > 
-> library(R2OpenBUGS)
+> library(R2OpenBUGS) 
 > library(ggplot2)
 > library(coda)
 > library(reshape2)
