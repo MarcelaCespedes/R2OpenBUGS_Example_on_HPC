@@ -1,0 +1,11 @@
+#!/bin/bash -l
+#PBS -N BUG_exampleHPC
+#PBS -l walltime=100:00:00
+#PBS -l mem=8g
+#PBS -l ncpus=1
+
+module load R/3.0.3_gcc
+module load openbugs/3.2.3
+
+cd $PBS_O_WORKDIR
+R --file=/home/n9023143/R/R_HPC_tut/smallBUGS_example/BUG_exampleHPC.R
