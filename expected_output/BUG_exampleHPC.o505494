@@ -1,8 +1,0 @@
-WARNING: ignoring environment value of R_HOME
-Fatal error: cannot open file '/home/n9023143/R/R_Code/R_HPC_tut/BUG_exampleHPC.R': No such file or directory
-
------
-PBS Job 505494.pbs
-CPU time  : 00:00:00
-Wall time : 00:00:02
-Mem usage : 284kb
